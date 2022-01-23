@@ -1,19 +1,15 @@
-import { useState } from 'react'
-import './App.css'
-import ChallengeCard from './components/ChallengeCard';
+import ChallengeCard from "./components/ChallengeCard/ChallengeCard";
 
-function App() {
+const App = () => {
+  const styles = {
+    padding: "20px",
+  };
 
   return (
-	
+    <div className="App" style={styles}>
+      <ChallengeCard challengeText="Gioca con una sola mano" />
+    </div>
+  );
+};
 
-	  <div className="App">
-		  <ChallengeCard />
-
-
-	</div>
-
-  )
-}
-
-export default App
+export default App;

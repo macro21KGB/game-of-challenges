@@ -1,8 +1,8 @@
 .flip-card {
   background-color: transparent;
-  width: 300px;
-  height: 200px;
-  border: 1px solid #f1f1f1;
+  width: 220px;
+  height: 300px;
+
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
@@ -17,12 +17,13 @@
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-card-toggle {
+.flipped {
   transform: rotateY(180deg);
 }
 
 /* Position the front and back side */
-.flip-card-front, .flip-card-back {
+.flip-card-front,
+.flip-card-back {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -32,13 +33,27 @@
 
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
-  background-color: #bbb;
+  background-color: rgb(244, 253, 255);
+  outline: 5px solid rgb(28, 140, 231);
   color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  user-select: none;
 }
 
 /* Style the back side */
 .flip-card-back {
-  background-color: dodgerblue;
-  color: white;
+  background-color: royalblue;
+  padding: 0 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   transform: rotateY(180deg);
+  border-radius: 8px;
+}
+
+.flip-card-back h6 {
+  color: white !important;
 }
