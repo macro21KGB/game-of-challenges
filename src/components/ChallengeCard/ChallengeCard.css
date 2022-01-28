@@ -34,7 +34,7 @@
 /* Style the front side (fallback if image is missing) */
 .flip-card-front {
   background-color: rgb(244, 253, 255);
-  outline: 5px solid rgb(28, 140, 231);
+  outline: 5px solid rgb(40, 151, 241);
   color: black;
   display: flex;
   justify-content: center;
@@ -45,7 +45,8 @@
 
 /* Style the back side */
 .flip-card-back {
-  background-color: royalblue;
+  background-color: white;
+  outline: 5px solid rgb(40, 151, 241);
   padding: 0 5px;
   display: flex;
   justify-content: center;
@@ -55,5 +56,5 @@
 }
 
 .flip-card-back h6 {
-  color: white !important;
+  color: royalblue !important;
 }

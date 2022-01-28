@@ -1,0 +1,12 @@
+nav {
+
+    height: 90px;
+    background-color: royalblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav img {
+    height: 100%;
+}
